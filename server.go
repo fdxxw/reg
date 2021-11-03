@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/genuinetools/reg/clair"
-	"github.com/genuinetools/reg/internal/binutils/static"
-	"github.com/genuinetools/reg/internal/binutils/templates"
+	"github.com/fdxxw/reg/clair"
+	"github.com/fdxxw/reg/internal/binutils/static"
+	"github.com/fdxxw/reg/internal/binutils/templates"
 	"github.com/gorilla/mux"
 	wordwrap "github.com/mitchellh/go-wordwrap"
 	"github.com/shurcooL/httpfs/html/vfstemplate"
