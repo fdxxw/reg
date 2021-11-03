@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/genuinetools/reg/clair"
-	"github.com/genuinetools/reg/registry"
+	"github.com/fdxxw/reg/clair"
+	"github.com/fdxxw/reg/registry"
 	"github.com/sirupsen/logrus"
 )
 
