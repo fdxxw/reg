@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"net/url"
 
-	"fmt"
-
 	"github.com/docker/distribution/reference"
 	"github.com/opencontainers/go-digest"
 )
@@ -46,7 +44,8 @@ func (r *Registry) UploadLayer(ctx context.Context, repository string, digest re
 		return err
 	}
 	upload.Header.Set("Content-Type", "application/octet-stream")
-	upload.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
+	// 使用http base auth
+	// upload.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
 
 	_, err = r.Client.Do(upload.WithContext(ctx))
 	return err
